@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { LayoutService } from 'src/app/services/layout.service';
 import { ActivatedRoute, Router } from '@angular/router';
+
 @Component({
   selector: 'app-graphic',
   templateUrl: './graphic.component.html',
@@ -20,7 +21,7 @@ export class GraphicComponent implements OnInit {
   mainComponent: any;
   mainComponent1: any;
 
-  constructor(private layoutService:LayoutService,private route: ActivatedRoute, private router: Router) { }
+  constructor(private layoutService:LayoutService) { }
 
   ngOnInit() {
     this.layoutService.PageContentAdded.subscribe((data)=>{

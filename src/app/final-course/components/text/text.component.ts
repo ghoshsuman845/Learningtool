@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { TextBox } from 'src/app/models/components/text-box.model';
+
 import { LayoutService } from 'src/app/services/layout.service';
 import { ActivatedRoute, Router } from '@angular/router';
 

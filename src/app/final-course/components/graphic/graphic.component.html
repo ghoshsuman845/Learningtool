@@ -1,13 +1,13 @@
 
-<div class="card" id="page" *ngFor ="let photo of component"  >
-    <div class="card-body graphics-title" >
-     {{photo.title}}
-    </div>
-    <div class="card-body graphics-inner">
-        {{photo.body}}
-      </div>
-      <div class="card-body">
-        {{photo.graphics_id}}
-      </div>
-      
+<div class="card" id="page" *ngFor ="let photo of graphicsContent"  >
+  <div class="card-body graphics-title" >
+   {{photo.title}}
   </div>
+  <div class="card-body graphics-inner">
+      {{photo.body}}
+    </div>
+    <div class="card-body">
+      {{photo.graphics_id}}
+    </div>
+    
+</div>
